@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes clown-peek {
+  0% { transform: scale(0.3) translateY(40px); opacity: 0; }
+  60% { transform: scale(1.1) translateY(-6px); opacity: 1; }
+  80% { transform: scale(0.95) translateY(2px); }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes honk-bounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.25) rotate(-6deg); }
+  60% { transform: scale(0.9) rotate(4deg); }
+}
+
+@keyframes cloud-move {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(10%); }
+  100% { transform: translateX(-10%); }
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-clown-appear {
+  animation: clown-peek 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-honk {
+  animation: honk-bounce 0.6s ease-in-out;
+}
+
+.animate-cloud-slow {
+  animation: cloud-move 28s ease-in-out infinite;
+}
+
+.animate-cloud-fast {
+  animation: cloud-move 18s ease-in-out infinite reverse;
+}
+

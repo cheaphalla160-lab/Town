@@ -1,0 +1,6 @@
+{
+  "name": "Where is the Clown? 寻找小丑趣味英语课堂",
+  "description": "专为小学英语课堂设计的趣味互动游戏：带孩子们在 Town 与 City 之间寻找逗趣的 Clown，通过视觉寻宝、自然拼读跟读、多档调速与趣味排行榜，轻松识记 city, town 与 clown！",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
